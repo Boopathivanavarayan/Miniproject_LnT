@@ -13,5 +13,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Install SDL2 API
+      run: sudo apt-get install libsdl2-2.0   
+           sudo apt-get install libsdl2-dev
+           sudo apt-get install libsdl2-image-dev
     - name: make
       run: make -C 3_Implementation/ all
