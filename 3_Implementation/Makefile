@@ -12,4 +12,4 @@ endif
 .PHONY: run clean test doc all
 
 all:
-	gcc sdl_test5.c -lmingw32 -lSDL2main -lSDL2 -o $(call FixPath,example.$(EXEC))
+	gcc sdl_test5.c -lSDL2 -o $(call FixPath,example.$(EXEC))
